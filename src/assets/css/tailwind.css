@@ -1,0 +1,21 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+.main {
+    column-count: 1000;
+    column-gap: 5px;
+    column-width: 300px;
+    top: 0px;
+    position: absolute;
+	bottom: 0;
+	left: 0;
+    overflow-x: auto;
+}
+.col{
+    height: 100%;
+    padding-top: 0px;
+    background-color: aquamarine;
+    overflow-y: scroll;
+}
