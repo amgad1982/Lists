@@ -16,6 +16,11 @@
 .col{
     height: 100%;
     padding-top: 0px;
-    background-color: aquamarine;
     overflow-y: scroll;
+}
+.inlinelist{
+    list-style: none;
+}
+.inlinelist li{
+    display: inline;
 }

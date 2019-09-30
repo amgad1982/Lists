@@ -1,28 +1,26 @@
 <template>
-  <div id="app">
-    <index></index>
+  <div id="app" class="container">
+    <site-header/>
+    <site-menu/>
+    <index/>
   </div>
 </template>
 
 <script>
 import Index from './components/index.vue'
-import Lodash from 'lodash'
+import SiteHeader from './components/header.vue'
+import SiteMenu from './components/sidemenu.vue'
+
 export default {
   name: 'app',
   components: {
-    Index
-  },
-  _:()=>Lodash
+    Index,
+    SiteHeader,
+    SiteMenu
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

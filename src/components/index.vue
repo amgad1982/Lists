@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Layout from "./columnLayout.vue";
+import Layout from "./columnlayout.vue";
 export default {
   name: 'index',
   components:{

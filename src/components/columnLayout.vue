@@ -1,6 +1,6 @@
 <template>
-  <div  class="main">
-      <column v-for="item in _.range(0,20)"></column>
+  <div  class="main p-2 bg-gray-100 ml-40 mt-12">
+      <column v-for="item in cols" :key="item"></column>
   </div>
 </template>
 
@@ -10,6 +10,11 @@ export default {
     name:"layout",
     components:{
         Column
+    },
+    data(){
+        return{
+            cols:[1,2,3,4,5,6,7,8]
+        }
     }
 }
 </script>
