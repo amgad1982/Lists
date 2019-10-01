@@ -1,5 +1,5 @@
 <template>
-  <div  class="main p-2 bg-gray-100 ml-40 mt-12">
+  <div  class="main p-2 bg-gray-100 ml-20">
       <column v-for="item in cols" :key="item"></column>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
     },
     data(){
         return{
-            cols:[1,2,3,4,5,6,7,8]
+            cols:this.$_.range(6)
         }
     }
 }
